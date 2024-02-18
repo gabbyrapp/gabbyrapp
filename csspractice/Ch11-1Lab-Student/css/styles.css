@@ -1,0 +1,39 @@
+/*Gabriella Bell
+ 2/17/24*/
+
+header{
+    background-color: aqua;
+}
+
+footer{
+    background-color: aqua;
+}
+
+p{
+    font-size: 20px;
+}
+
+ ul{
+font-size: 20px;
+}
+
+li{
+font-size: 20px;
+}
+a:link{
+    color:orangered;
+    
+}
+a:visited{
+    color:green;
+}
+
+a:hover{
+    color:yellow;
+}
+
+a:active{
+    color:purple;
+}
+
+
