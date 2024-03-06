@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Name
+     Date -->
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta name="author" content="Your Name" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Gabriella Bell web developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        label {
+            margin-right: 15px;
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:Gabriellabell@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+        <legend>How do I contact you?</legend>
+           
+            <div>
+                <label for ="Company"> Company:</label>
+                <input type = "Company" name = "Company" size="60"
+                id="Company"/>
+            </div>
+
+            <div>
+            <label for ="Person to Contact"> Person to Contact:</label>
+            <input type = "Person to Contact" name = "Person to Contact" size="40"
+            id="Person to Contact"/>
+            </div>
+
+           <div>
+              <label for ="email=address"> Email: </label>
+              <input type = "email" name = "Email_Address"
+              id="email-address" placeholder="Email Address" required/>
+            </div>
+
+            <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="000-000-0000" required/>
+            </div>
+
+
+        </fieldset>
+
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+        
+            <label for ="Type of Positions">Type of Positions</label>
+            <select name = "Type of Positions" id="Type of Positions">
+                <option value="internship">Internship</option>
+                <option value="Part-Time">Part-Time</option>
+                <option value="Full-Time">Full-Time</option>
+                <option value="Contract">Contract</option>
+                <option value="Temporary">Temporary</option>
+                <option value="On call">On Call</option>
+            </select>
+
+<p>How Did You Find Me?</p>
+<input type="radio" name="How did you find me?"
+id="LinkedIn" value="LinkedIn" /> <label for="LinkedIn">LinkedIn</label>
+
+<input type="radio" name="How did you find me?"
+id="Job Fair" value="Job Fair" /> <label for="Job Fair">Job Fair</label>
+
+<input type="radio" name="How did you find me?"
+id="CWI Corporate Partner" value="CWI Corporate Partner" /> <label for="CWI Corporate Partner">CWI Corporate Partner</label>
+            
+
+            <div>
+        
+                <textarea id="textarea" name="textarea" rows="10" cols="75"></textarea>
+
+            </div>
+        </fieldset>
+		<input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+</body>
+</html>
